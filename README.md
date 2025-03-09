@@ -17,7 +17,7 @@ A **basic Flask web application** for inventory management with CRUD operations 
 
 ## **🚀 Running Options**
 
-You have three options to run this application:
+You have two options to run this application:
 
 ### **Option 1: Fully Local Setup (No Docker)**
 
