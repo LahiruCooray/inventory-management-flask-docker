@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    background-color: #4CAF50; /* Green header */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row color */
+}
+
+tr:hover {
+    background-color: #ddd; /* Highlight row on hover */
+}
+
+/* No products message styling */
+td[colspan="4"] {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
+/* Button container placement */
+button {
+    display: inline-block;
+}
+button-container {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    margin-bottom: 20px; /* Add spacing below the buttons */
+}
+
+.button {
+    text-decoration: none;
+    background-color: rgb(93, 162, 241); /* Button background color */
+    color: white;            /* Text color */
+    padding: 10px 20px;      /* Button padding (top/bottom, left/right) */
+    border: none; 
+    font-weight: bold;
+    margin: 10px;           
+    border-radius: 5px;      /* Rounded corners */
+    font-size: 16px;         /* Font size */
+    cursor: pointer;         /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+.button:hover {
+    background-color: rgb(57, 57, 190); /* Darker blue when hovered */
+}
+.button:active {
+    background-color: rgb(15, 15, 128);
+    transform: scale(0.95); /* Slightly shrink the button */
+}
+.d_button {
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(236, 70, 70); /* Button background color */
+    color: white;            /* Text color */
+    padding: 10px 20px;      /* Button padding (top/bottom, left/right) */
+    border: none;            /* No border */
+    margin: 10px;
+    border-radius: 5px;      /* Rounded corners */
+    font-size: 16px;         /* Font size */
+    cursor: pointer;         /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+.d_button:hover {
+    background-color: rgb(187, 44, 44); /* Darker blue when hovered */
+}
+.d_button:active {
+    background-color: rgb(138, 37, 37);
+    transform: scale(0.95); /* Slightly shrink the button */
+}
+h1 {
+    font-family: 'Arial', sans-serif; /* Modern, clean font */
+    font-size: 3rem; /* Scalable font size */
+    font-weight: bold; /* Semi-bold for a strong heading */
+    color: #333; /* Dark gray for professional readability */
+    text-align: center; /* Center alignment (optional) */
+    margin: 20px 0; /* Space above and below */
+    letter-spacing: 3px; /* Slightly increase letter spacing for readability */
+    line-height: 1.4; /* Balanced spacing between lines for multi-line headings */
+    text-transform: uppercase; /* Capitalizes the first letter of each word */
+    border-bottom: 2px solid #ddd; /* Optional underline styling for emphasis */
+    padding-bottom: 12px; /* Padding for better spacing with the border */
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Container */
+form {
+    max-width: 500px;
+    margin: 20px auto; /* Center the form */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    font-family: Arial, sans-serif; /* Clean font */
+}
+
+/* Form Labels */
+form label {
+    display: block; /* Each label on its line */
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Fields and Textarea */
+form input[type="text"],
+form input[type="number"],
+form textarea {
+    width: 100%; /* Full width of the container */
+    padding: 10px;
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px;
+    color: #333;
+    background-color: #fff; /* White background */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Focus Effect for Inputs */
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form textarea:focus {
+    border-color: #4caf50; /* Green border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Green glow */
+}
+
+/* Submit Button */
+form .button {
+    width: 100%; /* Full width of the container */
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white; /* White text */
+    background-color: #4caf50; /* Green background */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for Button */
+form .button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+
+.message {
+    font-size: 1.2rem; /* Slightly larger font for visibility */
+    color: #155724; /* A dark green color for success messages */
+    background-color: #d4edda; /* Light green background for contrast */
+    border: 1px solid #c3e6cb; /* Subtle border to match the background */
+    padding: 10px 15px; /* Add space inside the message box */
+    margin: 15px 0; /* Space around the message */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.nmessage {
+    font-size: 1.2rem; /* Slightly larger font for visibility */
+    color: #ffffff; /* A dark green color for success messages */
+    background-color: #ff5b5b; /* Light green background for contrast */
+    border: 1px solid #ff5b5b; /* Subtle border to match the background */
+    padding: 10px 15px; /* Add space inside the message box */
+    margin: 15px 0; /* Space around the message */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+#homeButton {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White icon color */
+    padding: 0px 6px; /* Add padding around the icon */
+    margin-left: 0px; /* Space between the title and the button */
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#homeButton:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+#homeButton i {
+    font-size: 25px; /* Adjust the size of the icon */
+}
+#delete{
+    background-color: #f44336; /* Red background */
+    color: white; /* White icon color */
+
+}
+
+#search {
+    background-color: #5da9b6; /* Green background */
+    color: white; /* White icon color */
+    padding: 8px 10px; /* Add padding around the icon */
+    margin-left: 0px; /* Space between the title and the button */
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
