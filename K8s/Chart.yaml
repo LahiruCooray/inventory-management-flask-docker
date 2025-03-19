@@ -1,0 +1,6 @@
+apiVersion: v2
+name: inventory-management-app
+description: A Helm chart for deploying the Inventory Management application
+type: application
+version: 0.1.0
+appVersion: 0.1.0
